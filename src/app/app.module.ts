@@ -3,12 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WikipediaSearchingToolModule } from './wikipedia-searching-tool/wikipedia-searching-tool.module';
+import { TypingModule } from './typing/typing.module';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
+    TypingModule,
+    WikipediaSearchingToolModule,
     BrowserModule,
     AppRoutingModule
   ],

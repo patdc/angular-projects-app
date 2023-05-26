@@ -1,0 +1,12 @@
+<section class="hero is-info is-fullheight">
+  <div class="hero-body hero-image">
+    <div class="container has-text-centered">
+      <div class="column is-6 is-offset-3">
+        <h1 class="title">Wikipedia Searching Tool</h1>
+        <h2 class="subtitle">Simple Wikipedia API Searching Tool</h2>
+        <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+      </div>
+      <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
+    </div>
+  </div>
+</section>

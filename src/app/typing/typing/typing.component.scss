@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.typed-text {
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+}
+
+input {
+    border: 0;
+
+}
+
+.correct {
+    color: rgb(116, 255, 116);
+}
+
+.incorrect {
+    font-weight: 600;
+    color: rgb(255, 34, 34);
+}
+
+.pending {
+    color: rgb(206, 206, 206)
+}
+
+.text-success {
+    font-size: 2rem;
+    color: white;
+}
+
+.box {
+    width: 50%;
+    margin: auto;
+    padding: 30px 80px;
+    background-color: #181818;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .title, .subtitle {
+    color: white;
+  }

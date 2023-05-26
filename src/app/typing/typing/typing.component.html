@@ -1,0 +1,27 @@
+<section class="hero is-fullheight hero-image">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-6 is-offset-3">
+        <h1 class="title">Typing challenge</h1>
+        <h2 class="subtitle">How many words can you type right?</h2>
+      </div>
+      <div class="box">
+        <span
+          class="typed-text"
+          [class]="compare(letter, enteredText[i])"
+          *ngFor="let letter of randomText.split(''); let i = index"
+          >{{ letter }}</span
+        >
+        <div class="field">
+          <input
+            class="input typed-text"
+            (input)="onInput($any($event.target).value)"
+          />
+        </div>
+        <div *ngIf="solved" class="has-text-centered text-success">
+          <h1>Success! You've typed all the words correctly!</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
