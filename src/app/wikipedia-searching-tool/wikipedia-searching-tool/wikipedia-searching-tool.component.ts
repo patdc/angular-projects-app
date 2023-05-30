@@ -10,12 +10,11 @@ export class WikipediaSearchingToolComponent {
 
   constructor(private wikipedia: WikipediaService) {}
 
-  pages = [];
+  pages: any = [];
  
   onTerm(term: string) {
-    this.wikipedia.search(term).subscribe((response: any) => {
-      this.pages = response.query.search;
-      console.log(response)
+    this.wikipedia.search(term).subscribe((pages) => {
+      this.pages = pages;
     })
   }
 
